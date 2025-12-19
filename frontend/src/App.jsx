@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import WhyChooseUs from "./components/WhyChooseUs";
+import WhyChooseUs from "./components/WhyChooseUS";
 import WhyImage from "./components/WhyImage";
 import About from "./components/About";
 import Projects from "./components/Projects";
