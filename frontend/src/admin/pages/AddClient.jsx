@@ -17,7 +17,7 @@ const AddClient = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/api/clients", {
+      const res = await fetch("fullstack-consultancy-app-production.up.railway.app/api/clients", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),

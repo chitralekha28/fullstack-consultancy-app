@@ -4,7 +4,7 @@ const Contacts = () => {
   const [contacts, setContacts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/contact")
+    fetch("fullstack-consultancy-app-production.up.railway.app/api/contact")
       .then((res) => res.json())
       .then((data) => setContacts(data));
   }, []);

@@ -17,7 +17,7 @@ const AddProject = () => {
   const [croppedImage, setCroppedImage] = useState("");
 
   const fetchProjects = () => {
-    fetch("http://localhost:5000/api/projects")
+    fetch("fullstack-consultancy-app-production.up.railway.app/api/projects")
       .then((res) => res.json())
       .then((data) => setProjects(data));
   };
@@ -50,7 +50,7 @@ const AddProject = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:5000/api/projects", {
+    const res = await fetch("fullstack-consultancy-app-production.up.railway.app/api/projects", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -70,7 +70,7 @@ const AddProject = () => {
   const deleteProject = async (id) => {
     if (!window.confirm("Delete this project?")) return;
 
-    await fetch(`http://localhost:5000/api/projects/${id}`, {
+    await fetch(`fullstack-consultancy-app-production.up.railway.app/api/projects/${id}`, {
       method: "DELETE",
     });
 

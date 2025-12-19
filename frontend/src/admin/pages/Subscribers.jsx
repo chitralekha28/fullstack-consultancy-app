@@ -4,7 +4,7 @@ const Subscribers = () => {
   const [subscribers, setSubscribers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/subscribers")
+    fetch("fullstack-consultancy-app-production.up.railway.app/api/subscribers")
       .then((res) => res.json())
       .then((data) => setSubscribers(data));
   }, []);

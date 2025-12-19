@@ -4,7 +4,7 @@ const Clients = () => {
   const [clients, setClients] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/clients")
+    fetch("fullstack-consultancy-app-production.up.railway.app/api/clients")
       .then((res) => res.json())
       .then((data) => setClients(data))
       .catch((err) => console.error(err));

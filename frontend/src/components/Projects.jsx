@@ -4,7 +4,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/projects")
+    fetch("fullstack-consultancy-app-production.up.railway.app/api/projects")
       .then((res) => res.json())
       .then((data) => setProjects(data))
       .catch((err) => console.error(err));
